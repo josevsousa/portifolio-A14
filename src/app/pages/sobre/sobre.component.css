@@ -1,0 +1,8 @@
+#fotoPerfil{
+    max-height: 230px;
+    float: right;
+    margin-left: 20px;
+}
+img{
+    border-radius: 5%;
+    }

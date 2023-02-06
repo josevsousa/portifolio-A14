@@ -1,1 +1,38 @@
 /* You can add global styles to this file, and also import other style files */
+
+/* You can add global styles to this file, and also import other style files */
+
+/* @import "~@angular/material/prebuilt-themes/indigo-pink.css"; */
+
+.center{text-align: center}
+.subTitulo{
+    /* background: #efeeee; */
+    padding: 5px;
+    color: #5d5d5d;
+}
+
+.subTitulo2 {
+    background: #dee2e6;
+    padding: 10px;
+    color: #ffffff;
+    text-align: center;
+    font-size: xx-large;
+}
+
+h4.subTitulo i {
+    padding: 5px;
+    color: #cacaca;
+}
+
+li.pythonIcon .p {
+    width: 19px;
+}
+li.pythonIcon .w {
+    width: 62px;
+}
+
+.aLinkGamp {
+    cursor: pointer;
+    color: #377bff !important;
+}
+ 
