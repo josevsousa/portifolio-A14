@@ -16,12 +16,8 @@
               [(ngModel)]="inputCep"
               (keyup)="ngKeyup()" >
       
-      <div class="alert alert-danger" role="alert" [hidden]="validando">
-        {{msgErro}}
-      </div>
-      <div class="alert alert-success" role="alert" [hidden]="!valido">
-          Cep encontrado!!
-      </div>
+      <div class="alert alert-danger" role="alert" [hidden]="validando"> {{msgErro}} </div>
+      <div class="alert alert-success" role="alert" [hidden]="!valido"> Cep encontrado!! </div>
     </div>
 
     <!-- laoding  -->
