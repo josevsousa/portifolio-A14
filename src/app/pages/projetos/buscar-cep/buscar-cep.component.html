@@ -1,1 +1,46 @@
-<p>buscar-cep works!</p>
+<h5 class="subTitulo2">Consulta por cep</h5>
+  
+<div class="container">
+  <br>    
+  <div class="text-center">
+    <!-- titulo -->
+    <p class="card-text">Busca por cep/endereço API RAST no Angular V8.</p>
+
+    <!-- input cep -->
+    <div class="form-group cepInput" >
+      <input  type="text" 
+              maxlength="9" 
+              class="form-control" 
+              mask="00000-000"  
+              placeholder="cep"
+              [(ngModel)]="inputCep"
+              (keyup)="ngKeyup()" >
+      
+      <div class="alert alert-danger" role="alert" [hidden]="validando">
+        {{msgErro}}
+      </div>
+      <div class="alert alert-success" role="alert" [hidden]="!valido">
+          Cep encontrado!!
+      </div>
+    </div>
+
+    <!-- laoding  -->
+    <img src="./assets/images/loading.gif" alt="" [hidden]="loading">
+
+    <!-- card do endereço -->
+    <div class="card" style="width: 18rem; margin: 0 auto;" [hidden]="!valido">
+      <div class="card-body">
+        <h5 class="card-title">Cep: {{cepEncontrado['cep']}}</h5>
+        <h6 class="card-subtitle mb-2 text-muted">endereço</h6>
+        <ul>
+          <li> <b> Cidade: </b><i>{{cepEncontrado['localidade']}} - {{cepEncontrado['uf']}}</i></li>
+          <li><b> Bairro: </b> <i>{{cepEncontrado['bairro']}}</i></li>
+          <li><b> Rua: </b> <i>{{cepEncontrado['logradouro']}}</i></li>
+          <li *ngIf="cepEncontrado['complemento']"><b> Complemento: </b> <i>{{cepEncontrado['complemento']}}</i></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <br>
+
+ 

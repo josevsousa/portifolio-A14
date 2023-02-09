@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-projetos',
@@ -7,4 +8,9 @@ import { Component } from '@angular/core';
 })
 export class ProjetosComponent {
 
+  constructor(private router: Router){}
+
+  buscarCep(){
+    this.router.navigateByUrl("/buscar-cep")
+  }
 }

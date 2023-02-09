@@ -91,6 +91,16 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "prerender": false,
+            "ssr": false,
+            "browserTarget": "portifolio-A14:build:production",
+            "firebaseProject": "josevicentedesousa-e1ef1",
+            "firebaseHostingSite": "josevicentedesousa-e1ef1"
+          }
         }
       }
     }
