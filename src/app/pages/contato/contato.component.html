@@ -1,4 +1,94 @@
-<p>contato works!</p>
+<div class="container">
+    <br>
+    <div class="row">
+      <div class="col-sm">
+        <!-- <h4  class="subTitulo"><i class="material-icons">perm_contact_calendar</i> CONTATO</h4> -->
+  
+        <h2 class="subTitulo">
+          <!-- <i class="material-icons ">perm_contact_calendar</i>  -->
+          CONTATO
+        </h2> 
+        <div class="bd-example">
+          <address>
+            <strong>Endereço.</strong><br>
+            Rua Hélio Rodrigues Ferreira, 141 Pirituba<br>
+            São Paulo SP, CEP 05135-380<br>
+            <abbr title="Phone">Cel:</abbr> (11) 98442-0966
+          </address>
+        
+          <address>
+            <strong>Sociais</strong><br>
+            <a href="https://www.facebook.com/josevicentedesousa">
+              <img src="../assets/images/fac.png"  alt="facebook" >
+              facebook.com/josevicentedesousa</a>
+            <br>
+            <a href="https://twitter.com/josev_sousa">
+                <img src="../assets/images/twi.png"  alt="twitter" >
+                twitter.com/josev_sousa</a>
+            <br>
+                <a href="https://www.linkedin.com/in/josevicentedesousa/">
+              <img src="../assets/images/lin.png"  alt="linkedin" >
+              linkedin.com/in/josevicentedesousa</a>
+              <br>
+              <a href="https://www.github.com/josevsousa">
+                <img src="../assets/images/git.png"  alt="github" >
+                github.com/josevsousa
+              </a>
+              <br>
+              <a href="https://api.whatsapp.com/send?phone=5511984420966&text=Ola%20José%20Vicente%20!%20">
+                <img src="../assets/images/wha.png"  alt="WhatsApp" >
+                whatsApp (83) 99322-2247
+              </a>
+  
+          </address>
+        </div>     
+      </div>
+      <div class="col-sm">
+        <h2 class="subTitulo">
+          <!-- <i class="material-icons">send</i>  -->
+          MSG
+        </h2>
+  
+        <!-- <h2 class="subTitulo"><i class="material-icons ">perm_contact_calendar</i> CONTATO</h2>  -->
+        <!-- <form [formGroup]="formulario" (ngSubmit)="ngSubmit()" *ngIf="!enviado">
+          <div class="form-group" >
+            <input type="email" formControlName="email" class="form-control"  placeholder="seu@email.com">
+               <app-form-error [msgErro]="'Email invalido!'" [mostraErro]="verificaValorTouchedValid('email')"></app-form-error>    
+          </div>
+          <div class="form-group">
+            <input type="text" formControlName="nome"  class="form-control" placeholder="Seu nome">
+              <app-form-error [msgErro]="'Nome invalido!'" [mostraErro]="verificaValorTouchedValid('nome')"></app-form-error>     
+          </div>
+          <div class="form-group">
+            <textarea formControlName="messagem"  class="form-control" placeholder="Sua messagem" rows="3"></textarea>
+               <app-form-error [msgErro]="'Messagem invalida!'" [mostraErro]="verificaValorTouchedValid('messagem')"></app-form-error>    
+          </div>
+          <button class="btn btn-primary btn-block" type="submit" [disabled]="!formulario.valid" >Enviar</button>
+        </form>  -->
 
-
-
+        <form [formGroup]="formulario" *ngIf="!enviado" >
+          <div class="form-group" >
+            <input type="email" formControlName="email" class="form-control"  placeholder="seu@email.com">
+               <!-- <app-form-error [msgErro]="'Email invalido!'" [mostraErro]="verificaValorTouchedValid('email')"></app-form-error>     -->
+          </div>
+          <div class="form-group">
+            <input type="text" formControlName="nome"  class="form-control" placeholder="Seu nome">
+              <!-- <app-form-error [msgErro]="'Nome invalido!'" [mostraErro]="verificaValorTouchedValid('nome')"></app-form-error>      -->
+          </div>
+          <div class="form-group">
+            <textarea formControlName="messagem"  class="form-control" placeholder="Sua messagem" rows="3"></textarea>
+               <!-- <app-form-error [msgErro]="'Messagem invalida!'" [mostraErro]="verificaValorTouchedValid('messagem')"></app-form-error>     -->
+          </div>
+          <button class="btn btn-primary btn-block" type="submit" [disabled]="!formulario.valid" >Enviar</button>
+        </form>
+   
+  
+        <div *ngIf="enviado" class="enviado">
+          <img src="../assets/images/enviado.png" alt="">  
+          <h3>Enviado com sucesso!</h3>
+        </div>
+        <br>
+        <br>
+      </div>
+    </div>
+  </div>

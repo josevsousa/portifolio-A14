@@ -13,4 +13,8 @@ export class ProjetosComponent {
   buscarCep(){
     this.router.navigateByUrl("/buscar-cep")
   }
+
+  buscarCepForm(){
+    this.router.navigateByUrl("/buscar-cep-form");
+  }
 }

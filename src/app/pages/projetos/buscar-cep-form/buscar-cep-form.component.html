@@ -1,0 +1,26 @@
+<br>
+<p class="formTeste">buscar-cep Utilizando Formulário Reativo</p>
+
+
+<form [formGroup]="formularioCep" (ngSubmit)="ngSubmit()" class="formTeste">
+    <div class="form-group">
+        <input type="text" formControlName="cep" mask="00000-000"  class="form-control">
+    </div>
+    <button class="btn btn-primary btn-block" type="submit"  [disabled]="!formularioCep.valid">consular cep</button>
+</form>
+<br>
+<div class="alert alert-danger formTeste" [hidden]="!cepErrado">Cep Invalido!!</div>
+
+<br>
+<div class="card" style="width: 18rem; margin: 0 auto;" [hidden]="!statusCep">
+    <div class="card-body">
+      <h5 class="card-title">Cep: {{dataCep['cep']}}</h5>
+      <h6 class="card-subtitle mb-2 text-muted">endereço</h6>
+      <ul>
+        <li> <b> Cidade: </b><i>{{dataCep['localidade']}} - {{dataCep['uf']}}</i></li>
+        <li><b> Bairro: </b> <i>{{dataCep['bairro']}}</i></li>
+        <li><b> Rua: </b> <i>{{dataCep['logradouro']}}</i></li>
+        <li *ngIf="dataCep['complemento']"><b> Complemento: </b> <i>{{dataCep['complemento']}}</i></li>
+      </ul>
+    </div>
+  </div>

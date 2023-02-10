@@ -4,6 +4,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { InicioComponent } from './inicio/inicio.component';
 import { ContatoComponent } from './pages/contato/contato.component';
 import { BuscarCepComponent } from './pages/projetos/buscar-cep/buscar-cep.component';
+import { BuscarCepFormComponent } from './pages/projetos/buscar-cep-form/buscar-cep-form.component';
 import { ProjetosComponent } from './pages/projetos/projetos/projetos.component';
 import { SobreComponent } from './pages/sobre/sobre.component';
 
@@ -13,6 +14,7 @@ const routes: Routes = [
   {path: 'projetos', component: ProjetosComponent },
   {path: 'contatos', component: ContatoComponent },
   {path: 'buscar-cep', component: BuscarCepComponent },
+  {path: 'buscar-cep-form', component: BuscarCepFormComponent },
   {path: '', redirectTo:'inicio', pathMatch: 'full'},
   {path: '**', component: InicioComponent }  
 ];
