@@ -6,7 +6,7 @@ import { ProjetosComponent } from './projetos/projetos.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
-//import { NgxMaskDirective, NgxMaskPipe, provideNgxMask } from 'ngx-mask';
+import { NgxMaskDirective, NgxMaskPipe, provideNgxMask } from 'ngx-mask';
 import { BuscarCepFormComponent } from './buscar-cep-form/buscar-cep-form.component';
   
 
@@ -20,11 +20,11 @@ import { BuscarCepFormComponent } from './buscar-cep-form/buscar-cep-form.compon
     CommonModule,
     FormsModule,
     ReactiveFormsModule,
-   // NgxMaskDirective,
-   // NgxMaskPipe
+    NgxMaskDirective,
+    NgxMaskPipe
   ],
   providers: [
-  //  provideNgxMask()
+    provideNgxMask()
   ]
 })
 export class ProjetosModule { }
