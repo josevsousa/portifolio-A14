@@ -1,1 +1,5 @@
-<p>form-error works!</p>
+<div *ngIf="mostraErro">
+    <div class="alert alert-danger">
+      {{msgErro}}
+    </div>
+  </div>

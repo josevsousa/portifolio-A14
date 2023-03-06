@@ -70,16 +70,18 @@
           <div class="form-group" >
             <input type="email" formControlName="email" class="form-control"  placeholder="seu@email.com">
                <!-- <app-form-error [msgErro]="'Email invalido!'" [mostraErro]="verificaValorTouchedValid('email')"></app-form-error>     -->
-                <app-form-error></app-form-error>
+                <app-form-error [msgErro]="'Email invalido!'"></app-form-error>
               </div>
           <div class="form-group">
             <input type="text" formControlName="nome"  class="form-control" placeholder="Seu nome">
               <!-- <app-form-error [msgErro]="'Nome invalido!'" [mostraErro]="verificaValorTouchedValid('nome')"></app-form-error>      -->
-          </div>
+              <app-form-error [msgErro]="'Nome invalido!'"></app-form-error>
+            </div>
           <div class="form-group">
             <textarea formControlName="messagem"  class="form-control" placeholder="Sua messagem" rows="3"></textarea>
                <!-- <app-form-error [msgErro]="'Messagem invalida!'" [mostraErro]="verificaValorTouchedValid('messagem')"></app-form-error>     -->
-          </div>
+               <app-form-error [msgErro]="'Message invalida!'"></app-form-error>
+              </div>
           <button class="btn btn-primary btn-block" type="submit" [disabled]="!formulario.valid" >Enviar</button>
         </form>
    
