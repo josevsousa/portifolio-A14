@@ -18,7 +18,6 @@ import { UserProfileComponent } from './components/user-profile/user-profile.com
 import { ContatoComponent } from './pages/contato/contato.component';
 import { CursosComponent } from './pages/cursos/cursos.component';
 import { SobreComponent } from './pages/sobre/sobre.component';
-import { FormErrorComponent } from './shared/form-error/form-error.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NgxMaskDirective, NgxMaskPipe, provideNgxMask } from 'ngx-mask';
 
@@ -33,12 +32,11 @@ import { NgxMaskDirective, NgxMaskPipe, provideNgxMask } from 'ngx-mask';
     ContatoComponent,
     CursosComponent,
     SobreComponent,
-    FormErrorComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    // SharedModule,
+    SharedModule,
     // AngularFireModule.initializeApp(environment.firebase),
     // AngularFirestoreModule,
     ProjetosModule,
