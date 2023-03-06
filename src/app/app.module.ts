@@ -20,7 +20,7 @@ import { CursosComponent } from './pages/cursos/cursos.component';
 import { SobreComponent } from './pages/sobre/sobre.component';
 import { FormErrorComponent } from './shared/form-error/form-error.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { NgxMaskDirective, NgxMaskPipe, provideNgxMask } from 'ngx-mask';
+//import { NgxMaskDirective, NgxMaskPipe, provideNgxMask } from 'ngx-mask';
 
 
 
@@ -45,11 +45,11 @@ import { NgxMaskDirective, NgxMaskPipe, provideNgxMask } from 'ngx-mask';
     HttpClientModule,
     FormsModule,
     ReactiveFormsModule,
-    NgxMaskDirective,
-    NgxMaskPipe
+  //  NgxMaskDirective,
+  //  NgxMaskPipe
   ],
   providers: [
-    provideNgxMask()
+   // provideNgxMask()
   ],
   bootstrap: [AppComponent]
 })

@@ -46,17 +46,14 @@ export class BuscarCepComponent {
   } 
 
   validar(){
-    let dataObj: any = {erro: false};
     //valida se tudo e numero
     this.buscaCepService.getCep(String(this.inputCep))
       .subscribe((data)=>{
 
-        dataObj = data;
-
-        if (!dataObj.erro) {
+        if (!data.erro) {
               this.validando = true;
               this.valido = true; 
-              this.cepEncontrado = dataObj;
+              this.cepEncontrado = data;
         }else {
               this.validando = false;
               this.msgErro = "cep errado";

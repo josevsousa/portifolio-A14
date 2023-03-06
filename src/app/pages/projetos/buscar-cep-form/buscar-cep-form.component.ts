@@ -45,8 +45,7 @@ export class BuscarCepFormComponent {
 
   ngSubmit(){
     this.buscaCepFrom.getCep(this.formularioCep.value.cep)
-      .subscribe({
-        next: (resp) => {
+      .subscribe( (resp) => {
           if(!resp.erro){
             this.cepErrado = false;
             this.dataCep = resp;
@@ -58,7 +57,7 @@ export class BuscarCepFormComponent {
         }
         // error: (err) =>  this.cepErrado = true,
         // complete: () => console.log("finalizado")
-    })
+    )
   
   }
 }
