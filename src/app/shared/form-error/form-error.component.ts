@@ -7,5 +7,5 @@ import { Component, Input } from '@angular/core';
 })
 export class FormErrorComponent {
   @Input() msgErro: string = '';
-  @Input() mostraErro: boolean = true;
+  @Input() mostraErro: any = false;
 }

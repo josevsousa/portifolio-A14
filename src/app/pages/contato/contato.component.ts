@@ -15,19 +15,33 @@ export class ContatoComponent{
 
   constructor(private formBuilder: FormBuilder, private contatoService: ContatoService){
     this.formulario = formBuilder.group({
-         mail: [null, [Validators.required, Validators.email]],
+         email: [null, [Validators.required, Validators.email]],
          nome: [null, Validators.required],
      messagem: [null, Validators.required]
     });
   }
 
   ngSubmit(){
-    // this.contatoService.addContato2(this.formulario)
+
+    if(this.contatoService.addContato2(this.formulario)) {
+      console.log('ok')      
+    }else {
+      console.log('error')
+    }
+
+      
+  
+     
     // .then(()=> {
-    //   this.enviado = !this.enviado;
+     //  this.enviado = !this.enviado;
     // })
     // .catch((erro)=>{
     //   console.log("Erro: " + erro);}); //enviando o formContato para o service contato
   }
+
+  verificaValorTouchedValid(campo: any){
+    return !this.formulario.get(campo)?.valid && this.formulario.get(campo)?.touched;
+  }
+
 
 }

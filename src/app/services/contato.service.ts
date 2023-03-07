@@ -1,5 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { Observable } from 'rxjs';
 // import { AngularFirestore, AngularFirestoreCollection, AngularFirestoreDocument } from "@angular/fire/compat/firestore";
 // import { iContato } from '../models/form-contato';
 
@@ -23,6 +24,10 @@ export class ContatoService {
 
     // forma mais inchuta apenas para inserir dados sem a necessidade de observar 
     addContato2(form: any){
+      
+        console.log(form);  
+      
+
       // new id
       // const uid = this.db.createId();
   
@@ -38,7 +43,8 @@ export class ContatoService {
       // }
   
       // return contatoRef.set(contato_data);
-    
+      return false
+      
   
     }
 }
