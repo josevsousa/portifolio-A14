@@ -1,12 +1,13 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { ProjetosModule } from './pages/projetos/projetos.module';
 import { SharedModule } from './shared/shared.module';
 import { AppRoutingModule } from './app-routing.module';
 import { HttpClientModule } from '@angular/common/http';
+
+import { ProjetosModule } from './pages/projetos/projetos.module';
+import { CrudFirebaseModule } from './modules/crud-firebase/crudFirebase.module';
  
 import { AngularFireModule } from '@angular/fire/compat'
-
 
 import { AppComponent } from './app.component';
 import { InicioComponent } from './inicio/inicio.component';
@@ -34,6 +35,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    CrudFirebaseModule,
     AngularFireModule.initializeApp(
       {
         apiKey: 'AIzaSyDcgQBvEEJITnpJ5-CLuzuU7TQxfn7gaZM',
