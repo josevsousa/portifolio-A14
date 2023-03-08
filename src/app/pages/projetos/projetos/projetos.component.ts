@@ -17,4 +17,8 @@ export class ProjetosComponent {
   buscarCepForm(){
     this.router.navigateByUrl("/buscar-cep-form");
   }
+
+  crudFirebase(){
+    this.router.navigateByUrl("/crud-firebase");
+  }
 }

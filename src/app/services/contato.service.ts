@@ -1,6 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
  
+// import { AngularFirestore, AngularFirestoreCollection, AngularFirestoreDocument} from '@angular/fire/compat/firestore'
 import { Observable } from 'rxjs';
 import { iContato } from '../models/form-contato';
 
@@ -11,7 +12,7 @@ import { iContato } from '../models/form-contato';
 })
 export class ContatoService {
 
-  // contato: AngularFirestoreCollection<iContato>|undefined;
+  // contato?: AngularFirestoreCollection<iContato>;
 
   constructor(
     // private db: AngularFirestore,
@@ -19,32 +20,31 @@ export class ContatoService {
   ) { this.setContatos(); }
 
   private setContatos(): void{
-    // this.contato = this.db.collection<iContato>('/contatos');
+    //  this.contato = this.db.collection<iContato>('/contatos');
   }
 
     // forma mais inchuta apenas para inserir dados sem a necessidade de observar 
     addContato2(form: any){
       
-        console.log(form);  
+       console.log(form);  
       
 
       // new id
       // const uid = this.db.createId();
   
-      // // registro no firestore
-      //  const contatoRef: AngularFirestoreDocument<iContato> = this.db.doc(`contatos/${uid}`);
+      // registro no firestore
+      // const contatoRef: AngularFirestoreDocument<iContato> = this.db.doc(`contatos/${uid}`);
   
-      // //contato
-      // const contato_data = {
-      //   uid,
-      //   email:form.value.email,
-      //   nome: form.value.nome,
-      //   message: form.value.messagem
-      // }
+      //contato
+      //  const contato_data = {
+      //    uid,
+      //    email:form.value.email,
+      //    nome: form.value.nome,
+      //    message: form.value.messagem
+      //  }
   
       // return contatoRef.set(contato_data);
-      return false
-      
+      return false;
   
     }
 }

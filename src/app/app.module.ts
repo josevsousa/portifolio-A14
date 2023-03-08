@@ -17,10 +17,9 @@ import { CursosComponent } from './pages/cursos/cursos.component';
 import { SobreComponent } from './pages/sobre/sobre.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NgxMaskDirective, NgxMaskPipe, provideNgxMask } from 'ngx-mask';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 /// import { environment } from './environments/environment';
-
-
 
 @NgModule({
   declarations: [  
@@ -30,7 +29,7 @@ import { NgxMaskDirective, NgxMaskPipe, provideNgxMask } from 'ngx-mask';
     UserProfileComponent,
     ContatoComponent,
     CursosComponent,
-    SobreComponent,
+    SobreComponent
   ],
   imports: [
     BrowserModule,
@@ -52,7 +51,8 @@ import { NgxMaskDirective, NgxMaskPipe, provideNgxMask } from 'ngx-mask';
     FormsModule,
     ReactiveFormsModule,
     NgxMaskDirective,
-    NgxMaskPipe
+    NgxMaskPipe,
+    BrowserAnimationsModule
   ],
   providers: [
    // provideNgxMask()
