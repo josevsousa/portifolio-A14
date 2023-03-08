@@ -4,11 +4,7 @@ import { ProjetosModule } from './pages/projetos/projetos.module';
 import { SharedModule } from './shared/shared.module';
 import { AppRoutingModule } from './app-routing.module';
 import { HttpClientModule } from '@angular/common/http';
-
-// import { environment } from './invaironments/envaironment';
-// import { AngularFireModule } from '@angular/fire/compat';
-// import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
-
+ 
 
 
 import { AppComponent } from './app.component';
@@ -37,8 +33,6 @@ import { NgxMaskDirective, NgxMaskPipe, provideNgxMask } from 'ngx-mask';
     BrowserModule,
     AppRoutingModule,
     SharedModule,
-    // AngularFireModule.initializeApp(environment.firebase),
-    // AngularFirestoreModule,
     ProjetosModule,
     HttpClientModule,
     FormsModule,
