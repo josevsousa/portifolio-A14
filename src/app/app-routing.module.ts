@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
-import { InicioComponent } from './inicio/inicio.component';
+import { InicioComponent } from './pages/inicio/inicio.component';
 import { ContatoComponent } from './pages/contato/contato.component';
 import { BuscarCepComponent } from './pages/projetos/buscar-cep/buscar-cep.component';
 import { BuscarCepFormComponent } from './pages/projetos/buscar-cep-form/buscar-cep-form.component';

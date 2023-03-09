@@ -10,7 +10,8 @@ import { CrudFirebaseModule } from './modules/crud-firebase/crudFirebase.module'
 import { AngularFireModule } from '@angular/fire/compat'
 
 import { AppComponent } from './app.component';
-import { InicioComponent } from './inicio/inicio.component';
+
+import { InicioComponent } from './pages/inicio/inicio.component';
 import { NavBarComponent } from './components/nav-bar/nav-bar.component';
 import { UserProfileComponent } from './components/user-profile/user-profile.component';
 import { ContatoComponent } from './pages/contato/contato.component';
@@ -22,11 +23,12 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 /// import { environment } from './environments/environment';
 
+
 @NgModule({
   declarations: [  
     AppComponent,
-    InicioComponent,
     NavBarComponent,
+    InicioComponent,
     UserProfileComponent,
     ContatoComponent,
     CursosComponent,
